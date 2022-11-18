@@ -1,0 +1,25 @@
+@import "./color.scss";
+
+@mixin font-small($color: $text-color, $font-weight: 300) {
+  color: $color;
+  font-size: 0.8rem;
+  font-weight: $font-weight;
+}
+
+@mixin font-medium($color: $text-color, $font-weight: 400) {
+  color: $color;
+  font-size: 1rem;
+  font-weight: $font-weight;
+}
+
+@mixin font-title($color: $text-color, $font-weight: 600) {
+  color: $color;
+  font-size: 1.2rem;
+  font-weight: $font-weight;
+}
+
+@mixin font-large($color: $text-color, $font-weight: 700) {
+  color: $color;
+  font-size: 1.5rem;
+  font-weight: $font-weight;
+}

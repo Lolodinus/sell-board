@@ -1,0 +1,27 @@
+@import "../../share/scss/color.scss";
+
+.board {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .board__list {
+    flex-grow: 1;
+    padding-bottom: 1rem;
+    .board__empty {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $main-color;
+
+    }
+  }
+}

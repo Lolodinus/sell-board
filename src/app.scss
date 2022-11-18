@@ -1,0 +1,51 @@
+@import "./share/scss/color.scss";
+
+html,
+body,
+.app {
+	width: 100vw;
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	background-color: $background-color;
+}
+
+.container {  
+	width: 100%;
+	max-width: 1180px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+  .body__container {
+    flex-grow: 1;
+		.body__row {
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+  }
+}

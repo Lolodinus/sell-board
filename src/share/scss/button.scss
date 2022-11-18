@@ -1,0 +1,42 @@
+@import "./color.scss";
+@import "./fonts.scss";
+
+%btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+@mixin btn-small {
+  @extend %btn;
+  @include font-small;
+  padding: 0.2rem;
+}
+
+@mixin btn-medium {
+  @extend %btn;
+  @include font-medium;
+  padding: 0.5rem;
+}
+
+@mixin btn-large {
+  @extend %btn;
+  @include font-large;
+  padding: 1rem;
+}
+
+// btn-rounded
+@mixin btn-rounded-s {
+  @include btn-small;
+  border-radius: 0.2rem;
+}
+
+@mixin btn-rounded-m {
+  @include btn-medium;
+  border-radius: 0.5rem;
+}
+
+@mixin btn-rounded-l {
+  @include btn-large;
+  border-radius: 1rem;
+}

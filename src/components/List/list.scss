@@ -1,0 +1,19 @@
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  /* хром, сафари */
+  &::-webkit-scrollbar { width: 0; }
+
+
+  .list__item {
+    // height: 20rem;
+    flex-basis: 25%;
+    padding: 0.5rem;
+  }
+}

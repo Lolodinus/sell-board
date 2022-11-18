@@ -1,0 +1,27 @@
+@import "../../../share/scss/color.scss";
+
+.login__line {
+  height: 0.1rem;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: $main-color;
+}
+
+.login__link {
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  color: $main-color;
+}
+.login__btn {
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  background-color: $main-color;
+  font-weight: 600;
+  color: $text-color;
+}

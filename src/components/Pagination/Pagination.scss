@@ -1,0 +1,32 @@
+@import "../../share/scss/color.scss";
+.pagination__list {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  .pagination__item {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    box-shadow: 0 0.1rem 0.5rem $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: $main-color;
+    cursor: pointer;
+    &:not(:first-child) {
+      margin-left: 0.5rem;
+    }
+    &.action {
+      background-color: $main-color;
+      color: $text-color;
+      cursor: default;
+    }
+    &.inactive {      
+      background-color: rgba($color: $main-color, $alpha: 0.1);
+      cursor: default;
+    }
+  }
+}
